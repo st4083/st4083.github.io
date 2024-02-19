@@ -1,0 +1,119 @@
+.font (@fz: 3rem) {
+  font-size: @fz;
+  font-family: 'museo_bold', sans-serif;
+}
+.background-feedback () {
+  background: url(../img/shared/feedback/person-icon.svg) right 1.5rem center no-repeat;
+  background-size: 2rem;
+}
+.feedback-form-input () {
+  font-size: 1.5rem;
+  color: #515151;
+}
+.webkit-transition (@-wt:0.3s, @tr:0.3s) {
+  -webkit-transition: @-wt;
+  transition: @tr;
+}
+@tra: 0.3s;
+@text-a: center;
+@text-tr: uppercase;
+@background-color: #5ba2a9;
+@color:#1b1b1b;
+@white:#ffffff;
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'museo_reg', sans-serif;
+}
+section {
+  padding: 4rem 0 8rem;
+}
+a {
+  &:hover, &:focus, &:active {text-decoration: none;}
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+.feedback-forms-all {
+  padding: 6rem 0 9rem 0;
+}
+.section-title {
+  margin-bottom: 6rem;
+  text-align: @text-a;
+  text-transform: @text-tr;
+  .font(3rem);
+  color: @color;
+  .upper-icon-wrapper {
+  &::before, &::after {
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 0.1rem;
+    margin-bottom: 15px;
+    background-color: @background-color;}
+  .upper-icon {
+    margin-bottom: 1.5rem;
+    width: 2rem;
+    height: 2rem;}}
+}
+.feedback-form-statement {
+  padding: 6rem 0 0;
+}
+.feedback-form-title {
+  margin-bottom: 6rem;
+  text-align: @text-a;
+  h3 {
+    margin-bottom: 1.2rem;
+    .font(1.2rem);
+    color: @color;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
+.feedback-form-input {
+  position: relative;
+  width: 100%;
+  padding: 1.4rem 4.5rem 1.4rem 1.4rem;
+  border: 2px solid #d0d0d0;
+  opacity: .5;
+  color: #454545;
+  .webkit-transition;
+  -moz-transition: @tra;
+  -ms-transitiosn: @tra;
+  
+  &::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder {
+    .feedback-form-input;}
+  &:hover, &:focus {opacity: 1;}
+  .input-user, .input-phone {
+  .background-feedback;
+  }
+}
+.feedback-form-btn {
+    min-width: 100%;
+    padding: 1.2rem 0;
+    background-color:@background-color;
+    text-transform: @text-tr;
+    border: none;
+    color: @white;
+    font-size: 1.8rem;
+    .webkit-transition (0.4s, 0.4s);
+    &:hover {background-color: @background-color;
+      border-radius: 10px;}
+}
+.feedback-form {
+  .title-feedback, .description-feedback {
+      display: block;
+    }
+}
+
+
+  

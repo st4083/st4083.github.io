@@ -1,0 +1,49 @@
+body {
+  font-family: tahoma, sans-serif;
+}
+.section {
+  padding: 30px 0;
+}
+.header {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 80px;
+}
+.header span {
+  display: block;
+}
+.form {
+  border: 5px solid #2727d9;
+  padding: 30px 20px 25px 20px;
+  height: 300px;
+}
+.form-header {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+input {
+  margin-bottom: 10px;
+}
+.feature-header {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+.feature-box {
+  height: 160px;
+  
+}
+.feature p {
+  width: 120px;
+  margin: 20px auto 0 auto;
+}
+.feature .btn {
+  margin-top: 80px;
+}
+.client {
+  margin-bottom: 30px;
+}
+.video {
+  margin-bottom: 30px;
+}
